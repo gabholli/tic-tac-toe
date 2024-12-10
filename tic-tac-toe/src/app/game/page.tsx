@@ -4,9 +4,11 @@ import Image from "next/image"
 export default function NumPlayers() {
     return (
         <div className="flex flex-col justify-center items-center gap-y-24">
-            <h1>Select number of players:</h1>
+            <h1 className="text-2xl">Select number of players:</h1>
             <main className="grid grid-areas-playersScreen gap-4 ">
-                <h1 className="grid-in-imageOne border-4 h-64 w-32 flex justify-center items-center text-9xl">1</h1>
+                <Link
+                    href="components/board"
+                    className="grid-in-imageOne border-4 h-64 w-32 flex justify-center items-center text-9xl">1</Link>
                 {/* <Image
                     className="grid-in-imageOne"
                     src=""
