@@ -1,3 +1,5 @@
+"use client"
+
 type Player = "X" | "O" | "BOTH" | null;
 
 function Square({

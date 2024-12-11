@@ -38,7 +38,7 @@ function Board() {
         if (!w && !squares.filter((square) => !square).length) {
             setWinner("BOTH");
         }
-    });
+    }, [squares]);
 
     return (
         <div className="flex flex-col gap-y-4">
