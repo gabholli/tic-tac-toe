@@ -42,10 +42,10 @@ function Board() {
 
     return (
         <div className="flex flex-col gap-y-4">
-            {!winner && <p className="text-center">Hey {currentPlayer}, it's your turn</p>}
+            {!winner && <p className="text-center">Hey {currentPlayer}, it&apos;s your turn</p>}
             {winner && winner !== "BOTH" && <p className="text-center">Congratulations {winner}!</p>}
             {winner && winner === "BOTH" && (
-                <p className="text-center">It's a draw!</p>
+                <p className="text-center">It&apos;s a draw!</p>
             )}
 
             <div className="grid">

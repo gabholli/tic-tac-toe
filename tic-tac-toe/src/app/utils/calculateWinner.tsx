@@ -1,6 +1,7 @@
-import React from 'react'
+type Player = "X" | "O" | "BOTH" | null
 
-export default function calculateWinner(squares: any[]) {
+
+export default function calculateWinner(squares: Player[]) {
 
     const lines = [
         [0, 1, 2],
