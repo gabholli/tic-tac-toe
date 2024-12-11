@@ -4,7 +4,6 @@ import calculateWinner from "../utils/calculateWinner"
 import { useEffect, useState } from "react"
 import Square from "../components/Square"
 type Player = "X" | "O" | "BOTH" | null
-import Confetti from "react-confetti"
 
 
 function Board() {
@@ -48,7 +47,6 @@ function Board() {
 
     return (
         <div className="flex flex-col gap-y-4">
-            {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             {!winner && <p className="text-center">Hey {currentPlayer}, it's your turn</p>}
             {winner && winner !== "BOTH" && <p className="text-center">Congratulations {winner}!</p>}
             {winner && winner === "BOTH" && (
