@@ -9,7 +9,7 @@ export default function Home() {
         </div>
         <Link
           className="bg-black px-8 py-2 rounded-xl text-xl hover:underline text-white"
-          href="game"
+          href="/board"
         >
           Begin Game
         </Link>
