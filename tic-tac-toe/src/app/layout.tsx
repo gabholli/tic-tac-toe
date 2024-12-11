@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Tic Tac Toe</title>
         <link rel="icon" href="/tic-tac-toe.ico" />
       </head>
-      <body className='grid grid-rows-[auto_1fr_auto] grid-cols-1 w-full min-h-svh'>
+      <body className='flex flex-col justify-between min-h-svh'>
         <Header />
         <main className="flex items-center justify-center">{children}</main>
       </body>
